@@ -21,8 +21,6 @@ public class Transaction {
         TRANSFER, WITHDRAWAL, DEPOSIT
     }
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "transaction_id")

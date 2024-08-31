@@ -16,8 +16,9 @@ import lombok.Setter;
 @Table(name = "account")
 public class Account {
 
+
+
     @Id
-//  @GeneratedValue(strategy = GenerationType.IDENTITY) //Removed because of method that will automatically generate unique numbers (UUID)
     @Column(nullable = false, unique = true)
     private Long accountNumber;
 

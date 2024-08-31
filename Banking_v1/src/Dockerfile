@@ -10,7 +10,7 @@ RUN ./gradlew clean build -x test
 FROM openjdk:17-jdk-slim as runner
 WORKDIR /app
 COPY --from=build /app/build/libs/Banking_v1.jar /app/Banking_v1.jar
-
+EXPOSE 8080
 # Command to run your application
 CMD ["java", "-jar", "/Banking_v1.jar"]
 
